@@ -2,23 +2,18 @@ package model;
 
 public class Circle
 {
-    private int size;
+	private String name;
 
-    public int getSize()
-    {
-        return size;
-    }
+	public String getName()
+	{
+		return name;
+	}
 
-    public void setSize(int size)
-    {
-        this.size = size;
-    }
-
-    public void draw()
-    {
-        System.out.println("Circle drawn");
-    }
-    
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	
     
 
 }

@@ -5,6 +5,8 @@ import model.Triangle;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import service.ShapeService;
+
 public class Main
 {
 
@@ -14,7 +16,9 @@ public class Main
         ApplicationContext ctx = new ClassPathXmlApplicationContext("spring.xml");
         Triangle triangle = (Triangle) ctx.getBean("triangle");
         
-        triangle.draw();
+        ShapeService shape = (ShapeService) ctx.getBean("shapeService");
+        
+        System.out.println(shape.getCircle().getName());
 
 
         
